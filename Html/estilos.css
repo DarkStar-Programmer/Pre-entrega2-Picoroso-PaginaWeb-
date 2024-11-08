@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body.Inicio {
+    font-family: Arial, sans-serif;
+    background-image: url("https://smartlaunch.com/wp-content/uploads/2021/03/AFP1623319683285770776467082072161620884156-esports-game-game-esports-business-technology-computers-skorea-2.jpg"); /* Imagen de fondo */
+    background-size: 100% 100%;
+    background-position: center;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+}
+
+body.historia{
+    background-image:none;
+    font-family: Arial, sans-serif;
+}
+
+body.figuras-famosas{
+    background-image: none;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-image: linear-gradient(to right , black , rgb(177, 2, 2));
+    color: white;
+}
+
+.logo {
+    width: 80px;
+}
+
+nav a {
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+.grid-container {
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Estilos específicos para la página de Historia */
+.history {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.history h2 {
+    font-size: 2rem;
+    color: #e00101;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.history p {
+    font-size: 1.1rem;
+    color: #b60202;
+    line-height: 1.6;
+}
+
+.achievement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.achievement img {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+}
+
+.achievement h3 {
+    font-size: 1.5rem;
+    color: rgb(230, 170, 18);
+}
+
+.achievement p {
+    font-size: 1rem;
+    color: goldenrod;
+}
+
+/* Estilos específicos para la página de Figuras Famosas */
+.famous-figures {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.famous-figures h2 {
+    font-size: 2rem;
+    color: #e00101;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.figure img {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+}
+
+.figure h3 {
+    font-size: 1.5rem;
+    color: rgb(230, 170, 18);
+}
+
+.figure p {
+    font-size: 1rem;
+    color: rgb(162, 5, 5);
+}
+
+/* Footer en la parte inferior */
+footer {
+    background-image: linear-gradient(to right , black , rgb(177, 2, 2));
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+    position: relative;
+    margin-top: auto;
+}
+
+/* Estilos de botón */
+.button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    background-color: #9f0202;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #710101;
+}
+
+/* Responsividad para móviles */
+@media (max-width: 768px) {
+    .grid-container {
+        padding: 1rem;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    .history, .famous-figures {
+        padding: 0.5rem;
+    }
+
+    .achievement img, .figure img {
+        max-width: 90%;
+    }
+}
+
+/* Responsividad para pantallas más grandes */
+@media (min-width: 768px) {
+    .product-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Tres productos por fila */
+    }
+}
